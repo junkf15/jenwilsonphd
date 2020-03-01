@@ -3,3 +3,39 @@ This is my first file commit from windows to github
 I'm testing to see if the ssh keys have been loaded corectly
 I'm also going through the process of commiting a new file to a git repo for the first time
 this is for my MIT DevOps class
+
+Steps followed:
+created github account junkf15 with my standard password
+created source code repo called jenwilsonphd, included readme file and index.html
+installed git CLI on local machiene
+git config --global user.name 'junkf15'
+git config --global user.email junkf15@gmail.com
+generated ssh keys in git using:
+ssh-keygen
+used defaults and did not set a passphrase
+inspected key in the CLI using:
+cat ~/.ssh.id_rsa.pub
+copied the key from ssh to the end
+pasted the key into the git hub ssh key and named it windows vm key
+then created a dev directory
+then cloned the repo from github using 
+git clone git@github.com:junkf15/jenwilsonphd.git
+entered into the jenwilsonphd folder
+used the windows file folder to create a hello world.txt file
+opened it and added some text
+saved it
+in the git bash CLI used
+git status
+file name was red
+used add
+git add.
+checked git status
+file name was green
+committed the file using
+git commit -m 'added test'
+successful, then used 
+git push
+went back to github and checked the status of the file
+successful
+as a review, I added this test and tried again.
+
